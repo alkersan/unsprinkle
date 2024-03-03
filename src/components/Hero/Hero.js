@@ -1,10 +1,11 @@
 import React from 'react';
 import styled from 'styled-components/macro';
+import ResponsiveImage from "../ResponsiveImage";
 
 const Hero = () => {
   return (
     <Wrapper>
-      <HeroImage src="/images/hero-img.jpg" />
+      <HeroImage src="/images/hero-img.jpg" alt="Primary image of the site, depicts a blue-eyed cat looking straight" />
       <Swoop src="/swoop.svg" />
     </Wrapper>
   );
@@ -20,7 +21,7 @@ const Wrapper = styled.section`
   background: hsl(0deg 0% 1%);
 `;
 
-const HeroImage = styled.img`
+const HeroImage = styled(ResponsiveImage)`
   display: block;
   width: 500px;
   height: 500px;
